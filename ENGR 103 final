@@ -16,7 +16,7 @@ def wave_force(H):
     return wave_force
 
 
-"""Basic function above, below is the secondary optional functions"""\
+"""Basic function above, below is the secondary revised functions"""
 
 def calculate_force_of_wave(H):
     density_of_water = 1000.0
