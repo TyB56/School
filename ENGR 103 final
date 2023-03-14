@@ -1,22 +1,3 @@
-def wave_force(H):
-    building_height = 50  # meters
-    wave_speed = 100  # m/s
-    wave_density = 1025  # kg/m^3 (density of seawater)
-    gravity = 9.81  # m/s^2 (acceleration due to gravity)
-
-    # Calculate the kinetic energy of the wave
-    wave_ke = 0.5 * wave_density * H**2 * wave_speed**2
-
-    # Calculate the pressure of the wave on the building
-    wave_pressure = wave_density * gravity * H * (building_height - 0.5 * H)
-
-    # Calculate the force of the wave on the building
-    wave_force = wave_pressure * building_height
-
-    return wave_force
-
-
-"""Basic function above, below is the secondary revised functions"""
 
 def calculate_force(H):
     # Define variables here
@@ -35,3 +16,6 @@ def calculate_force(H):
         print("The building will overturn due to the force of the wave.")
     else:
         print("The building will not overturn.")
+
+
+
