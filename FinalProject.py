@@ -41,10 +41,10 @@ def collect_user_inputs():
     while True:
         try:
             target_temp = float(
-                input("What is the target temperature for the building: ")
+                input("What is the target temperature for the building in degrees (F): ")
             )
-            surface_area = float(input("Surface Area: "))
-            ceiling_height = float(input("What is the ceiling height: "))
+            surface_area = float(input("Surface Area (Square Feet): "))
+            ceiling_height = float(input("What is the ceiling height (Feet): "))
             number_occupants = float(input("What is the number of occupants: "))
             number_doors = float(input("How many exterior doors are on the building: "))
             number_windows = float(input("How many windows are on the building: "))
@@ -81,8 +81,8 @@ def get_inputs():
             target_temp = float(
                 input("What is the target temperature for the building: ")
             )
-            surface_area = float(input("Surface Area: "))
-            ceiling_height = float(input("What is the ceiling height: "))
+            surface_area = float(input("Surface Area (Square Feet): "))
+            ceiling_height = float(input("What is the ceiling height (Feet): "))
             number_occupants = float(input("What is the number of occupants: "))
             number_doors = float(input("How many exterior doors are on the building: "))
             number_windows = float(input("How many windows are on the building: "))
@@ -122,7 +122,7 @@ def average_month_temp(month_names):
     for month in month_names:
         while True:
             try:
-                temp = float(input(f"Enter the average temperature for {month}: "))
+                temp = float(input(f"Enter the average temperature for {month} in Fahrenheit: "))
                 month_temp.append(temp)
                 break
             except ValueError:
